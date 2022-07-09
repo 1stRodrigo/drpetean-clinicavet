@@ -39,11 +39,15 @@
     -webkit-appearance: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body, ul {
     margin: 0px;
     padding: 0px;
 }
+
 
 /*-----------NAV / MENU------------*/
 
@@ -64,8 +68,10 @@ body, ul {
 }
 
 #header {
+    position: relative;
+    width: 100%;
     box-sizing: border-box;
-    height: 70px;
+    height: 65px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -87,8 +93,8 @@ body, ul {
      display: none;
 }
 
-/*---TOPO DO SITE--*/
 
+/*---TOPO DO SITE--*/
 .titles-principal {
     font-family: var(--font-display);
     color: var(--cor1);
@@ -174,7 +180,7 @@ body, ul {
 
 .container-initial {
     margin: auto;
-    padding: 5rem;
+    padding: 3.2rem;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -208,9 +214,169 @@ body, ul {
     gap: 2rem;
 }
 .container-services li {
+    cursor: pointer;
     font-weight: 500;
     list-style: none;
 }
+
+.container-services img {
+    cursor: pointer;
+}
+
+.ball-bg {
+    
+    color: var(--cor3);
+    width: 20px;
+    height: 20px;
+}
+
+/*---ARTICLE NOSSOS SERVIÇOS---*/
+.container-sobre_services {
+
+}
+.sobre-infos {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.text_grouped h3 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+.text_grouped p {
+    width: 35vw;
+}
+
+.divpai-diag {
+    position: relative;
+}
+
+.divchild-diag {
+    position: absolute;
+    margin-left: 25px;
+    top: 4px;
+}
+
+/*#ball-bg {
+    content: '';
+    border-top: 2px solid;
+    width: 20px;
+    color: rgb(14, 126, 152);
+}*/
+
+#ball-bg1 {
+    content: '';
+    display: block;
+    border: 1px solid var(--cor6);
+    border-radius: 56px 54px 52px 45px;
+    width: 65px;
+    height: 56px;
+    top: 2px;
+    margin-left: 21px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
+#ball-bg2 {
+    content: '';
+    display: block;
+    border: 1px solid var(--cor6);
+    border-radius: 41px 54px 51px 45px;
+    width: 65px;
+    height: 56px;
+    top: 2px;
+    margin-left: 21px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+#ball-bg3 {
+    content: '';
+    display: block;
+    border: 1px solid var(--cor6);
+    border-radius: 48px 41px 38px 35px;
+    width: 65px;
+    height: 56px;
+    top: 2px;
+    margin-left: 21px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+#ball-bg4 {
+    content: '';
+    display: block;
+    border: 1px solid var(--cor6);
+    border-radius: 36px 43px 36px 41px;
+    width: 60px;
+    height: 50px;
+    top: 8px;
+    margin-left: 20px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
+#ball-bg5 {
+    content: '';
+    display: block;
+    border: 1px solid var(--cor6);
+    border-radius: 36px 43px 52px 35px;
+    width: 60px;
+    height: 50px;
+    top: 1px;
+    margin-left: 20px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
+.divpai-diag li {
+    position: relative;
+    top: 55px;
+}
+
+/*---SEÇÃO DE RESUMO E FOTO (Nossos Serviços)---*/
+
+#sobre_diag {
+    display: none;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#sobre_diag.active {
+    display: grid;
+    height: auto;
+    visibility: visible;
+    overflow-y: visible;
+}
+
+#sobre_vaci {
+    display: none;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+#sobre_vaci.active {
+    display: grid;
+    height: auto;
+    visibility: visible;
+    overflow-y: visible;
+}
+#sobre_cast {
+    display: none;
+}
+#sobre_derma {
+    display: none;
+}
+#sobre_clin {
+    display: none;
+}
+
+
 
 /*---CONTAINER-TEAM---*/
 .container-team {
@@ -235,6 +401,7 @@ body, ul {
 }
 
 /*---CONTAINER LOCATION---*/
+
 .container-location {
     font-family: var(--font-padrao);
     padding: 5rem;
@@ -265,6 +432,69 @@ body, ul {
 .iframe-maps {
     text-align: center;
 }
+
+/*---FOOTER---*/
+footer {
+    height: 7rem;
+}
+
+.footer-section {
+    background-attachment: fixed;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "logo ul"
+        "logo developed"
+    ;
+    
+}
+.footer-logo {
+    grid-area: logo;
+}
+
+.footer_img {
+    display: block;
+}
+
+.footer-section a {
+    margin: auto 1rem;
+    text-decoration: none;
+    color: var(--cor1);
+    transition: 0.1s;
+}
+
+.footer-section a:hover {
+    border: 1px solid var(--cor1);
+    border-radius: 30px;
+    color: var(--cor6);
+    background: var(--cor1);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.203);
+}
+
+.developed-footer {
+    color: var(--cor1);
+    font-weight: 300;
+    margin: 1rem 0 0;
+    grid-area: developed;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    justify-content: space-around;
+    grid-area: ul;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.footer-section li {
+    display: block;
+    align-self: center;
+}
+
 
 
 /*---FONTS CLASS---*/
@@ -305,6 +535,78 @@ body, ul {
 .icon {
     height: 24px;
 }
+.icon_services {
+    color: #000000;
+    display: block;
+    margin: auto;
+    width: 55px;
+    height: 55px;
+}
+
+/*---EFEITOS HOVER (NOSSOS SERVIÇOS)---*/
+#ball-bg1.active {
+    content: '';
+    display: block;
+    border-radius: 30px 56px 42px 57px;
+    margin-left: 38px;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
+#ball-bg2.active {
+    content: '';
+    display: block;
+    border-radius: 41px 33px 54px 47px;
+    margin-left: 38px;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+#ball-bg3.active {
+    content: '';
+    display: block;
+    border-radius: 27px 41px 39px 43px;
+    margin-left: 38px;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+#ball-bg4.active {
+    content: '';
+    display: block;
+    border-radius: 54px 37px 44px 26px;
+    margin-left: 38px;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
+#ball-bg5.active {
+    content: '';
+    display: block;
+    border-radius: 34px 47px 34px 26px;
+    margin-left: 38px;
+    width: 30px;
+    height: 30px;
+    top: 17px;
+    background: var(--cor6);
+    transition: .3s;
+    position: absolute;
+}
+
 
 /*---PADDING CLASS---*/
 .padding1rem {
