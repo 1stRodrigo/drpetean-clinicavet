@@ -11,9 +11,112 @@ document.querySelector('#goToUp').addEventListener('click', function(event){
 
 });
 
+//Resumo e Imagem: Diagnósticos
+/*
+const icon2 = document.getElementsByClassName('b2')
+
+function toggleIcon2(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    icon2.classList.toggle('active')
+    console.log("classe active adicionada")
+}
+*/
+
+const icone1 = document.getElementById('icone1') //<-- aqui é na label 1
+const icone2 = document.getElementById('icone2')
+const icone3 = document.getElementById('icone3')
+const icone4 = document.getElementById('icone4')
+const icone5 = document.getElementById('icone5')
+
+const bola1 = document.getElementById('ball-bg1')
+const bola2 = document.getElementById('ball-bg2')
+const bola3 = document.getElementById('ball-bg3')
+const bola4 = document.getElementById('ball-bg4')
+const bola5 = document.getElementById('ball-bg5')
+
+function toggleicone1(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    const bola1 = document.getElementById('ball-bg1')
+    bola1.classList.add('active');
+    console.log("classe active adicionada icone1")
+
+    bola2.classList.remove('active')
+    bola3.classList.remove('active')
+    bola4.classList.remove('active')
+    bola5.classList.remove('active')
+}
+
+icone1.addEventListener('touchstart', toggleicone1);
+icone1.addEventListener('click', toggleicone1);
+
+function toggleicone2(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    const icone2 = document.getElementById('ball-bg2')
+    icone2.classList.add('active');
+    console.log("classe active adicionada icone2")
+
+    bola1.classList.remove('active')
+    bola3.classList.remove('active')
+    bola4.classList.remove('active')
+    bola5.classList.remove('active')
+}
+
+icone2.addEventListener('touchstart', toggleicone2);
+icone2.addEventListener('click', toggleicone2);
+
+
+function toggleicone3(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    const icone3 = document.getElementById('ball-bg3')
+    icone3.classList.add('active');
+    console.log("classe active adicionada icone3")
+
+    bola1.classList.remove('active')
+    bola2.classList.remove('active')
+    bola4.classList.remove('active')
+    bola5.classList.remove('active')
+}
+
+icone3.addEventListener('touchstart', toggleicone3);
+icone3.addEventListener('click', toggleicone3);
+
+function toggleicone4(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    const icone4 = document.getElementById('ball-bg4')
+    icone4.classList.add('active');
+    console.log("classe active adicionada icone4")
+
+    bola1.classList.remove('active')
+    bola2.classList.remove('active')
+    bola3.classList.remove('active')
+    bola5.classList.remove('active')
+    
+}
+
+icone4.addEventListener('touchstart', toggleicone4);
+icone4.addEventListener('click', toggleicone4);
+
+function toggleicone5(event){
+    if (event.type === 'touchstart') event.preventDefault()
+    const icone5 = document.getElementById('ball-bg5')
+    icone5.classList.add('active');
+    console.log("classe active adicionada icone5")
+
+    bola1.classList.remove('active')
+    bola2.classList.remove('active')
+    bola3.classList.remove('active')
+    bola4.classList.remove('active')
+}
+
+icone5.addEventListener('touchstart', toggleicone5);
+icone5.addEventListener('click', toggleicone5);
+
+
+/*
+
 
 //APARECER RESUMO DIAGNÓSTICOS
-/*
+
 const icone1 = document.getElementById('clicar_diag')
 
 function toggleIcon1(event){
