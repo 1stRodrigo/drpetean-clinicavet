@@ -10,7 +10,7 @@
 <body>
     <div class="gradiente-principal">
     <header id="header">
-        <a href="#" id="logo"><img src="#" alt="Logo Dr.Petean"></a>
+        <a href="#" id="logo"><img src="images/logo/drpetean-logoSquareWhite2.png" alt="Logo Dr.Petean" class="" id="logo_header"></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
                 <span id="hamburguer"></span>
@@ -45,95 +45,107 @@
     </div>
     <main>
         <section id="section-services">
-            <div class="container-services fontpadrao">
-                <h2 class="textcenter">Nossos Serviços</h2>
-                <ul>
-                    <div class="divpai-diag effect_hov1">
-                        <button id="ball-bg1" class="active"></button>
-                            <div id="clicar_diag" class="divchild-diag">
-                                <img src="https://img.icons8.com/ios-glyphs/90/000000/test-results.png" alt="Diagnósticos" class="icon_services" id="icone1 icons_id">
-                            </div>
-                        <li>Diagnósticos</li>
-                    </div>
+            <div class="content">
+                <h2 class="textcenter fontpadrao">Nossos Serviços</h2>
+                <div class="navigation">
+                    <img src="images/icons/navigation/arrow-left2.svg" alt="seta indicativa de navegação" class="arrow-navigation">
+                    <label class="relative" for="slide1" id="icone1"> 
+                        <div class="bar" id="bola1">
+                            <div id="ball-bg1" class="active"></div>
+                                <div class="absolute">   
+                                    <img src="https://img.icons8.com/ios-glyphs/90/000000/test-results.png" alt="Diagnósticos" class="icon_services icons-position" id="icone1 icons_id">
+                                </div>
+                        </div>
+                    </label>
                     
-                    <div class="divpai-diag effect_hov2">
-                        <button id="ball-bg2"></button>
-                            <div id="clicar_vac" class="divchild-diag">
-                                <img src="https://img.icons8.com/material-outlined/90/000000/calendar--v1.png" alt="Vacinações" class="icon_services" id="icons_id">
-                            </div>
-                    <li>Vacinações</li>
-                    </div>
+                    <label class="relative" for="slide2" id="icone2">
+                        <div class="bar" id="bola2">
+                            <div id="ball-bg2"></div>
+                                <div class="absolute">
+                                    <img src="https://img.icons8.com/material-outlined/90/000000/calendar--v1.png" alt="Vacinações" class="icon_services icons-position" id="icons_id icone2">
+                                </div>
+                        </div>
+                    </label>
+
+                    <label class="relative" for="slide3" id="icone3">
+                        <div class="bar">
+                            <div id="ball-bg3"></div>
+                                <div class="absolute">
+                                    <img src="https://img.icons8.com/external-others-pike-picture/90/000000/external-Surgery-hospital-others-pike-picture-3.png" alt="Castrações" class="icon_services icons-position" id="icons_id">
+                                </div>
+                        </div>
+                    </label>
+
+                    <label class="relative" for="slide4" id="icone4">
+                        <div class="bar">
+                            <div id="ball-bg4"></div>
+                                <div class="absolute">
+                                    <img src="https://img.icons8.com/pastel-glyph/64/000000/dog-cone--v2.png" alt="Dermatologia" class="icon_services icons-position" id="icons_id">
+                                </div>
+                        </div>
+                    </label>
                     
-                    <div class="divpai-diag effect_hov3">
-                        <button id="ball-bg3"></button>
-                            <div id="clicar_cast" class="divchild-diag">    
-                                <img src="https://img.icons8.com/external-others-pike-picture/90/000000/external-Surgery-hospital-others-pike-picture-3.png" alt="Castrações" class="icon_services" id="icons_id">
-                            </div>
-                    <li>Castrações</li>
-                    </div>
+                    <label class="relative" for="slide5" id="icone5">
+                        <div class="bar">
+                            <div id="ball-bg5"></div>
+                                <div class="absolute">
+                                    <img src="https://img.icons8.com/ios-filled/90/000000/veterinarian-male.png" alt="Clínico Geral" class="icon_services icons-position" id="icons_id">
+                                </div>
+                        </div>
+                    </label>
+                    <img src="images/icons/navigation/arrow-right.svg" alt="seta indicativa de navegação" class="arrow-navigation">
+                </div>
+
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
                     
-                    <div class="divpai-diag effect_hov4">
-                        <button id="ball-bg4"></button>
-                            <div id="clicar_derma" class="divchild-diag">
-                                <img src="https://img.icons8.com/pastel-glyph/64/000000/dog-cone--v2.png" alt="Dermatologia" class="icon_services" id="icons_id">
-                            </div>
-                    <li>Dermatologia Vet</li>
-                    </div>
-                    
-                    <div class="divpai-diag effect_hov5">
-                        <button id="ball-bg5"></button>
-                            <div id="clicar_clin" class="divchild-diag">
-                                <img src="https://img.icons8.com/ios-filled/90/000000/veterinarian-male.png" alt="Clínico Geral" class="icon_services" id="icons_id">
-                            </div>
-                    <li>Clínico Geral Vet</li>
-                    </div>
-                </ul>
-            </div>
-            <article id="sobre_services">
-                <div class="container-sobre_services">
-                    <div class="sobre-infos active" id="sobre_diag">
-                        <img src="images/logo/drpetean_comfundo.png" alt="">
-                        <div class="text_grouped">
-                            <h3 class="fontdisplay">Diagnosticos</h3>
-                            <p class="fontpadrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde corrupti cupiditate voluptate consequatur maxime iure! Magni voluptatum atque in rerum error, repellat eveniet sit, ipsum similique dolore eum odit.</p>
+
+                    <div class="slide s1">
+                        <img src="images/services/veterinaria-cão.jpg" class="fotos-services" alt="Logo Dr Petean">
+
+                        <div id="resumo">
+                                <h1>Diagnósticos</h1>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et natus sapiente atque laborum, hic enim iusto corrupti consequatur? Possimus dolorum dicta quia libero doloremque! Quisquam voluptatum repudiandae beatae est!</p>
                         </div>
                     </div>
+                    <div class="slide s2">
+                        <img src="images/services/vacina-canina.png" class="fotos-services" alt="Logo Dr Petean">
 
-                    <div class="sobre-infos" id="sobre_vaci">
-                        <img src="images/logo/drpetean_comfundo.png" alt="">
-                        <div class="text_grouped">
-                            <h3 class="fontdisplay">Vacinas</h3>
-                            <p class="fontpadrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde corrupti cupiditate voluptate consequatur maxime iure! Magni voluptatum atque in rerum error, repellat eveniet sit, ipsum similique dolore eum odit.</p>
+                        <div id="resumo">
+                            <h1>Vacinas</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et natus sapiente atque laborum, hic enim iusto corrupti consequatur? Possimus dolorum dicta quia libero doloremque! Quisquam voluptatum repudiandae beatae est!</p>
                         </div>
                     </div>
+                    <div class="slide s3">
+                        <img src="images/services/cast-dog.jpeg" class="fotos-services" alt="Logo Dr Petean">
 
-                    <div class="sobre-infos" id="sobre_cast">
-                        <img src="images/logo/drpetean_comfundo.png" alt="">
-                        <div class="text_grouped">
-                            <h3 class="fontdisplay">Castracoes</h3>
-                            <p class="fontpadrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde corrupti cupiditate voluptate consequatur maxime iure! Magni voluptatum atque in rerum error, repellat eveniet sit, ipsum similique dolore eum odit.</p>
+                        <div id="resumo">
+                            <h1>Castrações</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et natus sapiente atque laborum, hic enim iusto corrupti consequatur? Possimus dolorum dicta quia libero doloremque! Quisquam voluptatum repudiandae beatae est!</p>
                         </div>
                     </div>
+                    <div class="slide s4">
+                        <img src="images/services/cao-alergico.jpg" class="fotos-services" alt="Logo Dr Petean">
 
-                    <div class="sobre-infos" id="sobre_derma">
-                        <img src="images/logo/drpetean_comfundo.png" alt="">
-                        <div class="text_grouped">
-                            <h3 class="fontdisplay">Dermatologia Vet</h3>
-                            <p class="fontpadrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde corrupti cupiditate voluptate consequatur maxime iure! Magni voluptatum atque in rerum error, repellat eveniet sit, ipsum similique dolore eum odit.</p>
+                        <div id="resumo">
+                            <h1>Dermatologia</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et natus sapiente atque laborum, hic enim iusto corrupti consequatur? Possimus dolorum dicta quia libero doloremque! Quisquam voluptatum repudiandae beatae est!</p>
                         </div>
                     </div>
-
-                    <div class="sobre-infos" id="sobre_clin">
-                        <img src="images/logo/drpetean_comfundo.png" alt="">
-                        <div class="text_grouped">
-                            <h3 class="fontdisplay">Clinico Geral Vet</h3>
-                            <p class="fontpadrao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde corrupti cupiditate voluptate consequatur maxime iure! Magni voluptatum atque in rerum error, repellat eveniet sit, ipsum similique dolore eum odit.</p>
+                    <div class="slide s5">
+                        <img src="images/services/clin-geral.jpg" class="fotos-services" alt="Logo Dr Petean">
+                        
+                        <div id="resumo">
+                            <h1>Clínico Geral</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet et natus sapiente atque laborum, hic enim iusto corrupti consequatur? Possimus dolorum dicta quia libero doloremque! Quisquam voluptatum repudiandae beatae est!</p>
                         </div>
                     </div>
                 </div>
-            </article>
-                <!--seção falando de cada especialidade-->
-                <!--<div com imagem e texto sobre-->
+            </div>
         </section>
         <section id="section-team">
             <div class="container-team">
@@ -176,25 +188,26 @@
                         <p>(19) 3296-0258</p>
                     </div>
                 <div class="iframe-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.1616920145628!2d-47.0411345480618!3d-22.852554565201427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c5c83d725c03%3A0x13c0b4e9683fce66!2sMarquinhos%20PetShop!5e0!3m2!1spt-BR!2sbr!4v1656892255260!5m2!1spt-BR!2sbr" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.1616920145628!2d-47.0411345480618!3d-22.852554565201427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c5c83d725c03%3A0x13c0b4e9683fce66!2sMarquinhos%20PetShop!5e0!3m2!1spt-BR!2sbr!4v1656892255260!5m2!1spt-BR!2sbr" width="700" height="300" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
+
         </section>
     </main>
     <footer class="fontpadrao fontbold gradiente-principal">
-        <section class="footer-section">
-            <ul>
-                <div class="footer_img">
-                    <a href="#" class="footer-logo"><img src="https://img.icons8.com/wired/64/000000/eppendorf.png" alt="Dr.Petean"></a>
-                </div>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Agendar</a></li>
-            </ul>
-                <p class="developed-footer textcenter">Site desenvolvido por Rodrigo Oliveira</p>
-        </section>
+            <div class="footer_img">
+                <a href="#" class="footer-logo"><img src="images/logo/drpetean-logoSquareWhite.png" alt="logo-DrPetean"></a>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Agendar</a></li>
+                    <li><a href="#" id="goToUp">Horário de atendimento</a></li>
+                </ul>
+                    <p class="developed-footer textcenter">Site desenvolvido por Rodrigo Oliveira</p>
+            </div>
     </footer>
 <a target="_blank" href="https://icons8.com/icon/6sxcJH0Urh0h/eppendorf"></a>
 <script src="menu.js"></script>
