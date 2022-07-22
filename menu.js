@@ -19,3 +19,5 @@ function toggleAtend(event) {
 
 btnAtendimentos.addEventListener('click', toggleAtend);
 btnAtendimentos.addEventListener('touchstart', toggleAtend);
+
+ 
