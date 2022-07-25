@@ -118,6 +118,10 @@ body, ul {
 
 .pic-principal {
     grid-area: pic;
+    position: relative;
+    bottom: 2.7rem;
+    max-width: 500px;
+
 }
 
 .pic-background {
@@ -183,6 +187,7 @@ body, ul {
 .container-initial {
     margin: auto;
     padding: 3.2rem;
+    height: 23rem;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
@@ -482,6 +487,7 @@ input {
 /*---CONTAINER LOCATION---*/
 
 .container-location {
+    position: relative;
     background: #00000003;
     font-family: var(--font-padrao);
     padding: 3rem;
@@ -533,6 +539,7 @@ footer {
         "ul"
         "developed";
     justify-content: space-around;
+    z-index: 3;
 }
 
 .footer-section {
@@ -627,7 +634,16 @@ footer {
 /*---ICONS CLASS---*/
 #logo_header {
     display: block;
-    margin: 0 0 0 5rem;
+    margin: 2.4rem 0 0 5rem;
+}
+.dog-pic-footer {
+    position: relative;
+    top: 9.8rem;
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    z-index: -1;
+
 }
 
 .icon {
@@ -761,7 +777,7 @@ footer {
         background: #e7e7e7;
         height: 0px;
         transition: .4s;
-        z-index: 1000;
+        z-index: 10000;
         visibility: hidden;
         overflow-y: hidden;
     }
