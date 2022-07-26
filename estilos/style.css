@@ -119,7 +119,7 @@ body, ul {
 .pic-principal {
     grid-area: pic;
     position: relative;
-    bottom: 2.7rem;
+    bottom: 1rem;
     max-width: 500px;
 
 }
@@ -186,17 +186,14 @@ body, ul {
 
 .container-initial {
     margin: auto;
-    padding: 3.2rem;
-    height: 23rem;
+    padding: 3rem 2rem 1.5rem 2rem;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-        "titles pic"
+    grid-template-areas: "titles pic"
         "subtitles pic"
         "options pic"
-        "ul pic"
-    ;
+        "ul pic";
 }
 
 
@@ -488,6 +485,7 @@ input {
     background: #00000003;
     font-family: var(--font-padrao);
     padding: 3rem;
+    height: 45rem;
 }
 .container-location h1 {
     font-family: var(--font-padrao);
@@ -548,10 +546,9 @@ footer {
     grid-area: logo;
 }*/
 
-.footer_img img {
-
+.footer_img {
+    margin-top: 1rem;
 }
-
 .footer-section a {
     font-weight: 400;
     margin: auto 1rem;
@@ -635,7 +632,7 @@ footer {
 }
 .dog-pic-footer {
     position: relative;
-    top: 9.8rem;
+    top: 1.3rem;
     display: block;
     margin: 0 auto;
     height: 300px;
@@ -762,6 +759,18 @@ footer {
     position: absolute;
 }
 
+/*
+*===== min-width: 1024px ( Responsive ) =====*/
+/*
+@media screen and (min-width: 1024px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 938rem;
+    --small-font-size: .75rem;
+  }
+*/
 
 @media (max-width: 600px) {
 
@@ -831,4 +840,58 @@ footer {
         transform: rotate(-135deg);
         top: -7px;
     }
+}
+
+@media (max-width: 1120px) {
+
+    #divoptions {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .pic-principal {
+        max-width: 480px;
+    }
+
+    #divoptions.active #ul {
+        height: 60vh;
+        padding: 1.2rem 3rem 1rem;
+
+    }
+
+    #ul {
+        text-indent: 0;
+    }
+}
+
+@media (max-width: 1050px) {
+    .pic-principal {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        height: 500px;
+        width: 70vw;
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .navigation {
+        margin: 0;
+    }
+
+    .div-location {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-location {
+        height: 51rem;
+    }
+    
 }
