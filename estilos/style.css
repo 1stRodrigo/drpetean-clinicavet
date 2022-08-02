@@ -159,6 +159,8 @@ body, ul {
     overflow-y: auto;
     height: 40vh;
     padding: 1.2rem 0 0;
+    height: 50vh;
+    padding: 1.2rem 3rem 1rem;
 }
 
 #ul {
@@ -200,18 +202,19 @@ body, ul {
 
 /*---CONTAINER-SERVICES---*/
 .content {
-    height: 500px;
-    width: 900px;
+    height: 75vh;
+    width: 85vw;
     margin: 3rem auto;
     overflow: hidden;
     top: 50%;
 }
 
 .navigation {
-    position: absolute;
-    display: flex;
-    margin: auto 130px;
-    text-align: center;
+        /* position: absolute; */
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
 }
 
 label {
@@ -235,7 +238,7 @@ input {
 .slides {
     display: flex;
     width: 500%;
-    margin: 200px 0 0;
+    margin: 5rem 0 0;
 }
 
 .slide {
@@ -513,8 +516,8 @@ input {
 
 .iframe-maps {
     margin: auto;
-    max-width: 706px;
-    max-height: 306px;
+    max-width: 80vw;
+    height: 40vh;
     border: 3px solid var(--cor6);
     border-radius: 23px;
     text-align: center;
@@ -523,24 +526,24 @@ input {
 
 /*---FOOTER---*/
 footer {
-    height: 9rem;
+    height: 20vh;
     background-attachment: fixed;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas:
-        "logo"
+    grid-template-areas: "logo"
         "ul"
         "developed";
-    justify-content: space-around;
+    /* justify-content: space-around; */
     z-index: 3;
+    gap: 5vw;
 }
 
 .footer-section {
-    margin: 1.5rem 12rem auto auto;
-    font-size: 1rem;
+    margin: 1rem auto;
+    font-size: 1.3rem;
 
 }
 /*.footer-logo {
@@ -548,7 +551,7 @@ footer {
 }*/
 
 .footer_img {
-    margin-top: 1rem;
+    margin: 1rem auto;
 }
 .footer-section a {
     font-weight: 400;
@@ -633,12 +636,11 @@ footer {
 }
 .dog-pic-footer {
     position: relative;
-    top: 1.3rem;
+    top: 6vh;
     display: block;
     margin: 0 auto;
-    height: 300px;
+    height: 40vh;
     z-index: -1;
-
 }
 
 .icon {
@@ -856,7 +858,7 @@ footer {
     }
 
     #divoptions.active #ul {
-        height: 60vh;
+        height: 45vh;
         padding: 1.2rem 3rem 1rem;
 
     }
@@ -889,21 +891,20 @@ footer {
     }
 
     .content {
-        height: 70%;
-        width: 70%;
+        height: 75vh;
+        width: 85vw;
         margin: 3rem auto;
         overflow: hidden;
         top: 50%;
     }
 
     .navigation {
-        position: initial;
-        display: grid;
-        grid-auto-flow: column;
-        /* grid-template-columns: auto; */
-        margin: auto;
-        /* text-align: center; */
-        
+    /* position: absolute; */
+    display: flex;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* justify-content: center; */
+    gap: 6vw;
     }
 
     .arrow-navigation {
@@ -927,7 +928,7 @@ footer {
     .slides {
         display: flex;
         width: 500%;
-        margin: 12em 0 0;
+        margin: 5rem 0 0;
     }
 
     #resumo {
@@ -945,22 +946,22 @@ footer {
         max-height: 17vh;
         min-height: 10vh;
         top: 15%;
-        margin-left: 15%;
+        /* margin-left: 15%; */
         background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 20%, #26B58D 60%);
         transition: .2s;
         position: absolute;
     }
-    #ball-bg1:active {
+    #ball-bg1.active {
         content: '';
         display: block;
         border: 0px solid white;
         border-radius: 30px 56px 42px 57px;
-        margin-left: 2.2rem;
+        margin-left: 1.7rem;
         max-width: 3vw;
-        min-width: 3vw;
-        max-height: 10vh;
-        min-height: 3vh;
-        top: 40%;
+        min-width: 4vw;
+        max-height: 1vh;
+        min-height: 2rem;
+        top: 2.2rem;
         background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 30%, #26B58D 60%);
         transition: .2s;
         position: absolute;
@@ -1086,6 +1087,18 @@ footer {
         position: absolute;
     }
 
+    /*---ICONES OUR SERVICES---*/
+
+    .icon_services {
+        position: absolute;
+        bottom: 0px;
+        color: #000000;
+        display: block;
+        margin: 10px auto;
+        max-width: 7vw;
+        max-height: 16vh;
+    }
+
 
 
     /*---LOCATION---*/
@@ -1103,31 +1116,30 @@ footer {
 
     .dog-pic-footer {
         position: relative;
-        top: 1.3rem;
+        top: 6vh;
         display: block;
         margin: 0 auto;
-        width: 100%;
-        max-width: 43rem;
-        /* height: 100%; */
-        /* max-height: 300px; */
+        height: 40vh;
         z-index: -1;
     }
 
     /*---FOOTER---*/
 
     footer {
-        height: 9rem;
-        background-attachment: fixed;
-        justify-content: center;
-        /* width: 100%; */
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "logo"
-            "ul"
-            "developed";
-        justify-content: space-around;
-        z-index: 3;
+    /* height: 9rem; */
+    background-attachment: fixed;
+    justify-content: center;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "logo"
+        "ul"
+        "developed";
+    /* justify-content: space-around; */
+    /* z-index: 3; */
+    place-items: center;
+    gap: 1rem;
     }
 
 
