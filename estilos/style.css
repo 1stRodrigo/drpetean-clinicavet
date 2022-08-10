@@ -1470,3 +1470,108 @@ footer {
     justify-content: space-around;
     }
 }
+
+@media (max-width: 650px) {
+    .footer-section {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-section {
+        margin: 0rem;
+    }
+
+    .footer-section ul {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .arrow-navigation {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 3.5rem;
+    }
+
+    #ball-bg1 {
+        content: '';
+        display: block;
+        border: 2px solid rgba(0, 0, 3, 0.110);
+        border-radius: 56px 62px 52px 45px;
+        max-width: 13vw;
+        min-width: 3vw;
+        max-height: 14vh;
+        min-height: 4rem;
+        top: 15%;
+        margin-left: 15%;
+        background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 20%, #26B58D 60%);
+        transition: .2s;
+        position: absolute;
+    }
+
+    #ball-bg2 {
+        content: '';
+        display: block;
+        border: 2px solid rgba(0, 0, 3, 0.110);
+        border-radius: 41px 44px 51px 55px;
+        max-width: 13vw;
+        min-width: 3vw;
+        max-height: 14vh;
+        min-height: 4rem;
+        top: 15%;
+        margin-left: 15%;
+        background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 20%, #26B58D 60%);
+        transition: .2s;
+        position: absolute;
+    }
+
+    #ball-bg3 {
+        content: '';
+        display: block;
+        border: 2px solid rgba(0, 0, 3, 0.110);
+        border-radius: 48px 41px 38px 35px;
+        max-width: 13vw;
+        min-width: 3vw;
+        max-height: 14vh;
+        min-height: 4rem;
+        top: 15%;
+        margin-left: 15%;
+        background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 20%, #26B58D 60%);
+        transition: .2s;
+        position: absolute;
+    }
+
+    #ball-bg4 {
+        content: '';
+        display: block;
+        border: 2px solid rgba(0, 0, 3, 0.110);
+        border-radius: 36px 43px 36px 41px;
+        max-width: 13vw;
+        min-width: 3vw;
+        max-height: 14vh;
+        min-height: 4rem;
+        top: 15%;
+        margin-left: 0rem;
+        background-image: linear-gradient(150deg, var(--cor6), var(--cor6) 20%, #26B58D 60%);
+        transition: .2s;
+        position: absolute;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .navigation {
+        display: flex;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 3.5rem;
+        
+    }
+}
