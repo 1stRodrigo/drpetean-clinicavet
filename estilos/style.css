@@ -851,8 +851,7 @@ footer {
 @media (max-width: 1120px) {
 
     #divoptions {
-        display: grid;
-        gap: 1.5rem;
+
     }
 
     .pic-principal {
@@ -1152,6 +1151,12 @@ footer {
         max-width: 25rem;
     }
 
+    .pic-principal {
+        max-width: 23rem;
+        min-width: 6rem;
+        right: 2rem;
+    }
+
     .div-location {
         display: grid;
         justify-content: center;
@@ -1348,6 +1353,10 @@ footer {
 }
 
 @media (max-width: 850px) {
+    .pic-principal {
+        
+    }
+
     #veterinaries {
         display: grid;
         grid-template-columns: auto;
