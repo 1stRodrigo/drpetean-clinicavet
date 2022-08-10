@@ -1571,7 +1571,44 @@ footer {
         display: flex;
         grid-template-columns: auto;
         justify-content: center;
-        gap: 3.5rem;
-        
+        gap: 1rem;   
+    }
+
+    .bar {
+        width: 5em;
+    }
+
+    .icon_services {
+        position: absolute;
+        bottom: 0px;
+        color: #000000;
+        display: block;
+        margin: 10px auto;
+        max-width: 3rem;
+        max-height: 3rem;
+    }
+
+    #ball-bg1 {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    #ball-bg2 {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    #ball-bg3 {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    #ball-bg4 {
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .navigation {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
