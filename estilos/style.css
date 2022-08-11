@@ -1136,13 +1136,12 @@ footer {
 
 @media (max-width: 950px) {
     .titles-principal {
-        max-width: 25rem;
+        width: 90%;
     }
 
     .pic-principal {
         max-width: 23rem;
         min-width: 6rem;
-        right: 2rem;
     }
 
     .div-location {
@@ -1341,10 +1340,19 @@ footer {
 }
 
 @media (max-width: 850px) {
+
+    .container-initial {
+        
+    }
+
     .pic-principal {
         
     }
 
+    #divoptions {
+        display: grid;
+        gap: 1.3rem;
+    }
     #veterinaries {
         display: grid;
         grid-template-columns: auto;
@@ -1470,6 +1478,51 @@ footer {
 }
 
 @media (max-width: 750px) {
+    .container-initial {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+        "pic"
+        "titles"
+        "subtitles"
+        "options"
+        "ul";
+        place-items: center;
+        margin: 0 auto;
+    }
+
+    .titles-principal {
+        width: 90%;
+        text-align: center;
+    }
+
+    .subtitles-principal {
+        color: var(--cor1);
+        grid-area: subtitles;
+        width: 90%;
+        margin: 1rem 0 3rem 0;
+        text-align: justify;
+    }
+
+    #divoptions {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "options"
+            "options"
+            "ul"
+            "ul";
+    }
+
+    #divoptipons.active #ul {
+        height: 90%;
+        width: 95%;
+        padding: 1.2rem 3rem 1rem;
+    }
+
+    #ul {
+        grid-area: "ul";
+    }
+
     #icone5.relative {
         display: none;
     }
