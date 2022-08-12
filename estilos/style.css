@@ -907,6 +907,18 @@ footer {
     }
 }
 
+@media (max-width: 650px) {
+    #divoptions {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "options"
+                "options"
+                "ul";
+        place-items: center;
+    }
+}
+
 @media (max-width: 1120px) {
 
     #divoptions {
@@ -1389,7 +1401,7 @@ footer {
         display: flex;
         flex-direction: column;
         /* grid-template-columns: auto auto; */
-        width: 21%;
+        width: 20%;
         transition: .3s;
         /* justify-items: center; */
         align-items: center;
@@ -1411,6 +1423,11 @@ footer {
     #divoptions {
         display: grid;
         gap: 1.3rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: "options options"
+                "ul ul";
+        grid-area: options;
     }
     #veterinaries {
         display: grid;
@@ -1565,10 +1582,12 @@ footer {
 
     #divoptions {
         display: grid;
-        grid-template-columns: auto auto;
-        grid-template-areas: "options options"
-                "ul ul";
-        grid-area: options;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "options"
+                "options"
+                "ul";
+        place-items: center;
     }
 
     #divoptipons.active #ul {
@@ -1579,7 +1598,7 @@ footer {
     }
 
     #ul {
-        grid-area: "ul";
+        
     }
 
     .div-options a {
