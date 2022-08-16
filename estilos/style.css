@@ -858,6 +858,19 @@ footer {
 
     /*---other content below---*/
 
+    #logo_header {
+        margin: 0.5rem 0 0 1rem;
+    }
+    
+    #logo_header img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #header a:hover {
+        box-shadow: none;
+    }
+
     .titles-principal {
         font-size: 2.3rem;
     }
