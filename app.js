@@ -61,6 +61,17 @@ function toggleicone2(event){
     bola5.classList.remove('active')
 }
 
+/*const mobile_icon2 = document.getElementById('bola1')
+mobile_icon2.addEventListener('touchstart', toggleicone2);*/
+
+/*
+const touchicon2 = document.querySelector('img#icone2')
+touchicon2.addEventListener('touchstart', toggleicone2); 
+
+    nesse script, a imagem aciona o carrossel, mas não o efeito de bola de fundo.
+
+    */
+bola2.addEventListener('touchstart', toggleicone2);
 icone2.addEventListener('touchstart', toggleicone2);
 icone2.addEventListener('click', toggleicone2);
 
