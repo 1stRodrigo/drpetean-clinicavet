@@ -484,6 +484,11 @@ input {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
+    place-items: center;
+}
+
+.team-vets {
+    width: 95%;
 }
 
 /*---CONTAINER LOCATION---*/
@@ -636,7 +641,7 @@ footer {
 /*---ICONS CLASS---*/
 #logo_header {
     display: block;
-    margin: 2.4rem 0 0 5rem;
+    margin: 1.6rem 0 0 1rem;
 }
 .dog-pic-footer {
     position: relative;
@@ -1391,8 +1396,8 @@ footer {
     }
 
     .fotos-services {
-        max-width: 250vw;
-        max-height: 20%;
+        max-width: 90%;
+        margin-bottom: 1rem;
         border-radius: 80px 60px 95px 45px;
         box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.050);
     }
