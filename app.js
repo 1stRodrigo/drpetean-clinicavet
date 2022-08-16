@@ -44,6 +44,16 @@ function toggleicone1(event){
     bola3.classList.remove('active')
     bola4.classList.remove('active')
     bola5.classList.remove('active')
+
+    const checked1 = document.querySelector('input#slide1')
+    function ativarRadio(inpu) {
+        if (inpu == true ) {
+            inpu.checked = false;
+        } else {
+            inpu.checked = true;
+        }
+    }
+    ativarRadio(checked1);
 }
 
 icone1.addEventListener('touchstart', toggleicone1);
@@ -59,6 +69,16 @@ function toggleicone2(event){
     bola3.classList.remove('active')
     bola4.classList.remove('active')
     bola5.classList.remove('active')
+    
+    const checked2 = document.querySelector('input#slide2')
+    function ativarRadio(inpu) {
+        if (inpu == true ) {
+            inpu.checked = false;
+        } else {
+            inpu.checked = true;
+        }
+    }
+    ativarRadio(checked2);
 }
 
 /*const mobile_icon2 = document.getElementById('bola1')
@@ -70,8 +90,17 @@ touchicon2.addEventListener('touchstart', toggleicone2);
 
     nesse script, a imagem aciona o carrossel, mas não o efeito de bola de fundo.
 
+
+
+    1.Adicionar no script, quando der active no ball-bg2 adicionar uma const checked no input ou label 2.
+
+    pesquisar no google depois ##IMPORTANT###
+    
+    2.
+    
     */
-bola2.addEventListener('touchstart', toggleicone2);
+
+
 icone2.addEventListener('touchstart', toggleicone2);
 icone2.addEventListener('click', toggleicone2);
 
@@ -86,6 +115,16 @@ function toggleicone3(event){
     bola2.classList.remove('active')
     bola4.classList.remove('active')
     bola5.classList.remove('active')
+
+    const checked3 = document.querySelector('input#slide3')
+    function ativarRadio(inpu) {
+        if (inpu == true ) {
+            inpu.checked = false;
+        } else {
+            inpu.checked = true;
+        }
+    }
+    ativarRadio(checked3);
 }
 
 icone3.addEventListener('touchstart', toggleicone3);
@@ -101,6 +140,16 @@ function toggleicone4(event){
     bola2.classList.remove('active')
     bola3.classList.remove('active')
     bola5.classList.remove('active')
+
+    const checked4 = document.querySelector('input#slide4')
+    function ativarRadio(inpu) {
+        if (inpu == true ) {
+            inpu.checked = false;
+        } else {
+            inpu.checked = true;
+        }
+    }
+    ativarRadio(checked4);
     
 }
 
@@ -117,6 +166,16 @@ function toggleicone5(event){
     bola2.classList.remove('active')
     bola3.classList.remove('active')
     bola4.classList.remove('active')
+
+    const checked5 = document.querySelector('input#slide5')
+    function ativarRadio(inpu) {
+        if (inpu == true ) {
+            inpu.checked = false;
+        } else {
+            inpu.checked = true;
+        }
+    }
+    ativarRadio(checked5);
 }
 
 icone5.addEventListener('touchstart', toggleicone5);
