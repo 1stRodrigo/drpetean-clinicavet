@@ -790,9 +790,9 @@ footer {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 105px;
         right: 0px;
-        background: #0e6a6a;
+        background-image: linear-gradient(150deg, var(--cor6),#065959 0%, #26B58D 80%);
         height: 0px;
         transition: .4s;
         z-index: 10000;
@@ -1595,7 +1595,7 @@ footer {
         grid-area: subtitles;
         width: 80%;
         margin: 1rem 0 3rem 0;
-        text-align: justify;
+        text-align: left;
     }
 
     #divoptions {
