@@ -4,10 +4,19 @@ function scrollTo(element){
 
 document.querySelector('#goToUp').addEventListener('click', function(event){
     event.preventDefault();
-    scrollTo("#section-readme")
+    scrollTo(".subtitles-principal")
     console.log("go to up")
     const options = document.getElementById('divoptions');
     options.classList.toggle('active')
+    
+    if (screen.width < 600) {
+    
+        event.preventDefault();
+    scrollTo(options)
+    console.log("go to up")
+    const options = document.getElementById('divoptions');
+    options.classList.toggle('active')
+    }
 
 });
 
@@ -95,8 +104,6 @@ touchicon2.addEventListener('touchstart', toggleicone2);
     1.Adicionar no script, quando der active no ball-bg2 adicionar uma const checked no input ou label 2.
 
     pesquisar no google depois ##IMPORTANT###
-    
-    2.
     
     */
 
