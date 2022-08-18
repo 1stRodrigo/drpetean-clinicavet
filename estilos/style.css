@@ -510,7 +510,7 @@ input {
     position: relative;
     background: #00000003;
     font-family: var(--font-padrao);
-    padding: 3rem;
+    padding: 1.1rem;
     height: 45rem;
 }
 .container-location h1 {
