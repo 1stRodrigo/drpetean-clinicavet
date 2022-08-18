@@ -510,7 +510,7 @@ input {
     position: relative;
     background: #00000003;
     font-family: var(--font-padrao);
-    padding: 1.1rem;
+    padding: 0.7rem;
     height: 45rem;
 }
 .container-location h1 {
@@ -954,6 +954,10 @@ footer {
 
     #veterinaries > div {
         padding: 2rem;
+    }
+
+    .team-vets {
+        width: 90%;
     }
 }
 
