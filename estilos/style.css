@@ -529,6 +529,11 @@ input {
     padding-right: 3rem;
     color: var(--cor1);
 }
+.container-location address a:hover {
+    text-decoration: underline;
+}
+
+
 .container-location p > a {
     color: var(--cor1);
     text-decoration: none;
@@ -537,6 +542,9 @@ input {
 
 .container-location p {
     padding-right: 3rem;
+}
+.container-location .hour-atend:hover {
+    text-decoration: underline;
 }
 
 .div-location {
@@ -547,17 +555,6 @@ input {
     flex-wrap: wrap;
 }
 
-.div-location > img {
-    float: left;
-    filter: opacity(2.4) drop-shadow(1px 0px 0px white);
-
-}
-
-.brightness { filter: brightness(1.25); }
-.blur { filter: blur(2px); }
-.saturate { filter: saturate(300%); }
-.grayscale { filter: grayscale(200%); }
-.contrast { filter: contrast(60%); }
 
 .iframe-maps {
     margin: auto;
