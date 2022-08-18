@@ -498,10 +498,12 @@ input {
 .wrap-location {
     border-radius: 35px;
     background-image: linear-gradient(357deg, var(--cor6), #26B58D 20%);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .shadow-intern {
-    padding: 2rem 0rem 2rem;
+    padding: 2rem 0rem 3rem;
     box-shadow: inset 3px 3px 20px 0px #00000012;
     border-radius: 35px;
 }
@@ -510,8 +512,8 @@ input {
     position: relative;
     background: #00000003;
     font-family: var(--font-padrao);
-    padding: 0.7rem;
-    height: 45rem;
+    padding: 3rem;
+    height: 43rem;
 }
 .container-location h1 {
     font-family: var(--font-padrao);
@@ -542,6 +544,7 @@ input {
     justify-content: center;
     margin-bottom: 2.5rem;
     color: var(--cor1);
+    flex-wrap: wrap;
 }
 
 .div-location > img {
@@ -562,6 +565,7 @@ input {
     height: 20rem;
     border-radius: 23px;
     text-align: center;
+    padding: 1rem;
 }
 
 
@@ -953,11 +957,27 @@ footer {
     }
 
     #veterinaries > div {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .team-vets {
         width: 90%;
+    }
+
+    /*---SECTION LOCATION---*/
+
+    .container-location {
+        position: relative;
+        background: #00000003;
+        font-family: var(--font-padrao);
+        padding: 2rem 1rem;
+        height: 45rem;
+    }
+
+    .shadow-intern {
+        padding: 2rem 0rem 2rem;
+        box-shadow: inset 3px 3px 20px 0px #00000012;
+        border-radius: 35px;
     }
 }
 
@@ -1230,12 +1250,16 @@ footer {
 
     /*---LOCATION---*/
 
+
+    .wrap-location {
+        border-radius: 35px;
+        background-image: linear-gradient(357deg, var(--cor6), #26B58D 20%);
+        width: 100%;
+    }
+
     .iframe-maps {
         margin: auto;
-        max-width: 706px;
-        width: 86%;
-        max-height: 306px;
-        height: 100%;
+        width: 100%;
         text-align: center;
     }
 
@@ -1265,6 +1289,14 @@ footer {
     .pic-principal {
         max-width: 23rem;
         min-width: 6rem;
+    }
+
+    .container-location {
+        position: relative;
+        background: #00000003;
+        font-family: var(--font-padrao);
+        padding: 2rem 1rem;
+        height: 46rem;
     }
 
     .div-location {
