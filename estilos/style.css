@@ -202,7 +202,7 @@ body, ul {
 
 /*---CONTAINER-SERVICES---*/
 .content {
-    height: 40rem;
+    height: 35rem;
     width: 85vw;
     margin: 3rem auto;
     overflow: hidden;
@@ -249,14 +249,15 @@ input {
     /* justify-items: center; */
     place-items: center;
     align-items: start;
+    padding: 0rem 8rem;
 }
 
 .slides {
     font-family: var(--font-padrao);
 }
 #resumo {
-    width: 30vw;
-    font-size: 1.3rem;
+    width: 80%;
+    font-size: 1.1rem;
     /* margin-left: 2rem; */
 }
 
@@ -476,8 +477,8 @@ input {
 }
 .container-team > p {
     margin: auto;
-    width: 50vw;
-    margin-bottom: 3rem;
+    width: 55%;
+    margin-bottom: 5rem;
 }
 
 #veterinaries {
@@ -485,10 +486,11 @@ input {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
     place-items: center;
+    align-items: baseline;
 }
 
 .team-vets {
-    width: 95%;
+    width: 70%;
 }
 
 /*---CONTAINER LOCATION---*/
@@ -679,7 +681,7 @@ footer {
 }
 
 .fotos-services {
-    max-width: 45vw;
+    max-width: 33vw;
     /* max-height: 100%; */
     border-radius: 80px 60px 95px 45px;
     box-shadow: 2px 4px 5px 2px rgba(0, 0, 0, 0.050);
@@ -1423,6 +1425,7 @@ footer {
         transition: .3s;
         /* justify-items: center; */
         align-items: center;
+        padding: 0rem 3rem;
     }
         
 
@@ -1646,6 +1649,15 @@ footer {
 }
 
 @media (max-width: 550px) {
+
+    .fotos-services {
+        min-width: 320px;
+    }
+
+    #resumo {
+        width: 87%;
+        margin-left: 0;
+    }
     .footer-section {
         margin: 0rem;
     }
@@ -1735,6 +1747,12 @@ footer {
 }
 
 @media (max-width: 450px) {
+
+    #resumo {
+        width: 100%;
+    }
+
+
     .navigation {
         display: flex;
         grid-template-columns: auto;
@@ -1775,8 +1793,25 @@ footer {
 }
 
 @media (max-width: 410px) {
+
+    .slide {
+        padding:  0rem 0rem;
+    }
+
+    .fotos-services {
+        max-width: 90%;
+        min-width: 170px;
+    }
+
+    #resumo {
+        width: 100%;
+    }
     .navigation {
         display: grid;
         grid-template-columns: auto auto;
+    }
+
+    .content {
+        height: 53rem;
     }
 }
