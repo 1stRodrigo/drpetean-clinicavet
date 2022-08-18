@@ -495,6 +495,17 @@ input {
 
 /*---CONTAINER LOCATION---*/
 
+.wrap-location {
+    border-radius: 35px;
+    background-image: linear-gradient(357deg, var(--cor6), #26B58D 20%);
+}
+
+.shadow-intern {
+    padding: 2rem 0rem 5rem;
+    box-shadow: inset 3px 3px 20px 0px #00000012;
+    border-radius: 35px;
+}
+
 .container-location {
     position: relative;
     background: #00000003;
@@ -507,13 +518,20 @@ input {
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 2rem;
+    color: var(--cor1);
 }
 
 .container-location address a {
     font-family: var(--font-padrao);
     text-decoration: none;
     padding-right: 3rem;
+    color: var(--cor1);
 }
+.container-location p > a {
+    color: var(--cor1);
+    text-decoration: none;
+}
+
 
 .container-location p {
     padding-right: 3rem;
@@ -523,13 +541,25 @@ input {
     display: flex;
     justify-content: center;
     margin-bottom: 2.5rem;
+    color: var(--cor1);
 }
+
+.div-location > img {
+    float: left;
+    filter: opacity(2.4) drop-shadow(1px 0px 0px white);
+
+}
+
+.brightness { filter: brightness(1.25); }
+.blur { filter: blur(2px); }
+.saturate { filter: saturate(300%); }
+.grayscale { filter: grayscale(200%); }
+.contrast { filter: contrast(60%); }
 
 .iframe-maps {
     margin: auto;
     max-width: 60rem;
     height: 20rem;
-    border: 3px solid var(--cor6);
     border-radius: 23px;
     text-align: center;
 }
