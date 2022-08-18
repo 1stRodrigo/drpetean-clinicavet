@@ -501,7 +501,7 @@ input {
 }
 
 .shadow-intern {
-    padding: 2rem 0rem 5rem;
+    padding: 2rem 0rem 2rem;
     box-shadow: inset 3px 3px 20px 0px #00000012;
     border-radius: 35px;
 }
@@ -1229,11 +1229,9 @@ footer {
     .iframe-maps {
         margin: auto;
         max-width: 706px;
-        width: 100%;
+        width: 86%;
         max-height: 306px;
         height: 100%;
-        border: 3px solid var(--cor6);
-        border-radius: 23px;
         text-align: center;
     }
 
@@ -1268,7 +1266,8 @@ footer {
     .div-location {
         display: grid;
         justify-content: center;
-        margin-bottom: 2.5rem;
+        width: 85%;
+        margin: auto auto 1rem;
     }
 
     #ball-bg1 {
